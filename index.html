@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        #dateofbirthlbl {
+            color: #FF0000;
+        }
+        
+        #statelbl {
+            color: #FF0000;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <h1>Premium Calculator</h1>
+    <table>
+        <tbody>
+            <tr>
+                <td>Date of Birth:</td>
+                <td><input type="date" id="dateofbirth" name="dateofbirth"></td>
+                <td><label id="dateofbirthlbl">Invalid date of birth or age is less than 18</label></td>
+                <td><label id="isValidDateofBirthlbl">0</label></td>
+            </tr>
+            <tr>
+                <td>State:</td>
+                <td><input type="text" id="state"></td>
+                <td><label id="statelbl">Invalid state</label></td>
+                <td><label id="isValidStatelbl">0</label></td>
+            </tr>
+            <tr>
+                <td>Age:</td>
+                <td><input type="text" id="age" disabled></td>
+            </tr>
+            <tr>
+                <td> <button id="btnGetValue">Get Value</button></td>
+                <td> <input type="text" id="premium" disabled> <br></td>
+                <td>
+                    <select name="frecuencie" id="frecuencie">
+                        <option value="0" selected>Select</option>
+                        <option value="1" >Monthly</option>
+                        <option value="3" >Quarterly</option>
+                        <option value="6" >Semi-Annually</option>
+                        <option value="12">Annually</option>
+                    </select>
+                </td>
+                <td>Annual</td>
+                <td><input type="text" id="annual" disabled></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Monthly</td>
+                <td><input type="text" id="monthly" disabled></td>
+            </tr>
+        </tbody>
+    </table>
+    <script type="text/javascript" src="assets/js/preCalculator.js  "></script>
+</body>
+
+</html>
